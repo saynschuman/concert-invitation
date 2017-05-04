@@ -1,0 +1,45 @@
+@import "includes/variables";
+@import "includes/fonts";
+@import "vendors/bootstrap";
+
+@font-face {
+  font-family: "hortensiac";
+  src: url("../fonts/hortensiac.eot");
+  src: local("☺"), url("../fonts/hortensiac.eot?#iefix") format("embedded-opentype"), url("../fonts/hortensiac.woff") format("woff"), url("../fonts/hortensiac.ttf") format("truetype"), url("../fonts/hortensiac.svg#PT Serif") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+.wrapper {
+    width: 600px;
+    height: 242px;
+    background-image: url(../img/concert.jpg);
+    background-position: 0px -51px;
+    background-size: cover;
+    color: #fff;
+    text-align: right;
+    padding-right: 25px;	
+    font-family: hortensiac;
+    position: relative;
+    .title {
+    	font-size: 50px;
+    }
+    .sub-title {
+	    	font-size: 15px;
+	    	margin-top: -5px;
+	    	font-size: 15px;
+	}
+    .abs {
+    	position: absolute;
+    	bottom: 15px;
+    	right: 25px;
+	    .time {
+	    	font-size: 50px;
+	    	font-weight: bold;
+	    }
+	    .sub-time {
+	    	font-size: 15px;
+	    	margin-top: -15px;
+	    }
+	}
+}
